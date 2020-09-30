@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+}
+p {
+    font-size: 24px;
+}
+.bg-lighter {
+    background-color: #9DC8EA!important;
+}
+#top-separator {
+    width: 200px;
+    border-bottom: 5px solid #6C97B8;
+    position: absolute;
+    margin: 20px 0;
+}
+.logo {
+    padding: 20px 0;
+    margin-left: 15px;
+    width: 100px;
+}
+.logo img{
+    width: 100px;
+}
+.hero-text h3 {
+    margin-top: 55px;
+}
+.app-store {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin-top: 60px;
+    padding: 0;
+}
+.app-store li img{
+    height: 60px;
+    padding-right: 20px;
+}
+.welcome-title {
+    margin: auto;
+    font-size: 80px;
+    font-weight: 700;
+    color: #9DC8EA;
+    margin-bottom: 30px;
+}
+.utilities-container {
+    display: flex;
+}
+#utilities h2 {
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    margin: 60px 0 80px 0;
+}
+.utilities-icon {
+    width: 20%;
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+}
+.utilities-icon img {
+    width: 160px;
+    margin-left: 10px;
+}
+
+.utilities-icon h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin: 20px 0;
+    text-align: left;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.utilities-icon p {
+    font-size: 14px;
+    color: white;
+    padding: 10px 10px 50px 10px;
+}
+#browse-products img {
+    width: 400px;
+}
+.browse-text h2 {
+    text-align: right;
+    font-size: 70px;
+    font-weight: 700;
+}
+.browse-text h3 {
+    text-align: right;
+    margin-top: 60px;
+}
+.bottom-separator {
+    border-bottom: 5px solid black;
+    width: 180px;
+    position: absolute;
+    right: 15px;
+    margin-top: 15px;
+}
+#footer {
+    background-color: #6C97B8;
+    border-bottom: 2px solid white;
+}
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+.footer-menu a{
+    color: white;
+    text-decoration: none;
+}
+.social-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.social-menu img {
+    width: 30px;
+    margin-right: 10px;
+}
+.social-menu img:hover {
+    opacity: 0.5;
+}
+.footer-apps {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+}
+.footer-apps img {
+    height: 60px;
+    margin-left: 15px;
+    float: right;
+}
+#copyright {
+    background-color: #6C97B8;
+    color: white;
+    padding: 15px 0;
+}
+#copyright a {
+    text-decoration: none;
+    color: white;
+}
+#copyright a:hover {
+    color: black;
+}
+@media only screen and (max-width: 1200px) {
+    .hero-mobile img{
+        width: 220px;
+    }
+    .app-store {
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .hero-text h1 {
+        padding-top: 0!important;
+    }
+    .hero-mobile {
+        width: 50%;
+    }
+    .app-store {
+        float: left;
+        margin-bottom: 40px;
+    }
+    .app-store li {
+        margin: auto;
+    }
+    .utilities-icon img {
+        width: 140px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hero-mobile img {
+        display: none;
+    }
+    .utilities-icon img {
+        width: 120px;
+    }
+    .utilities-container {
+        flex-direction: column;
+    }
+    #browse-products img {
+        width: 200px;
+    }
+    .browse-text h2 {
+        font-size: 30px;
+    }
+    .bottom-separator {
+        width: 80px;
+        border-bottom: 3px solid black;
+        margin-top: 4px;
+    }
+    .browse-text h3 {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .row{
+        padding: 0 15px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    .logo img{
+        width: 80px;
+    }
+    .hero-text {
+        padding-top: 0!important;
+    }
+    .hero-text h1 {
+        font-size: 50px;
+    }
+    .hero-text h3 {
+        font-size: 1.6rem;
+    }
+    #top-separator {
+        width: 140px;
+    }
+    .welcome-title {
+        font-size: 40px;
+    }
+    .app-store li img {
+        height: 40px;
+    }
+    #utilities h2 {
+        font-size: 40px;
+        margin: 20px 0 20px 15px;
+        text-align: center;
+    }
+    .utilities-icon {
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+        padding-left: 0;
+    }
+    .utilities-icon h4 {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .utilities-text {
+        padding-top: 0px!important;
+    }
+    .utilities-icon p{
+        padding: 10px;
+    }
+    .footer-apps {
+        float: inherit!important;
+    }
+    .footer-apps img {
+        height: 40px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}

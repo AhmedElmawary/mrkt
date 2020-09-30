@@ -1,0 +1,70 @@
+{
+	"name": "lloyds-backend",
+	"version": "1.0.0",
+	"description": "Lloyds Design backend template",
+	"homepage": "https://lloyds-design.com",
+	"author": {
+		"name": "Lloyds Design",
+		"email": "info@lloyds-design.com",
+		"url": "https://lloyds-design.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.com/lloydsgroup/lloyds-backend-laravel.git"
+	},
+	"scripts": {
+		"watch": "gulp watch",
+		"build": "gulp build",
+		"clean": "gulp clean"
+	},
+	"prettier": {
+		"printWidth": 100,
+		"useTabs": true,
+		"semi": true,
+		"singleQuote": true,
+		"trailingComma": "none",
+		"bracketSpacing": true,
+		"jsxBracketSameLine": false,
+		"arrowParens": "avoid"
+	},
+	"babel": {
+		"compact": true,
+		"comments": false,
+		"minified": true,
+		"presets": [
+			"minify",
+			[
+				"env",
+				{
+					"targets": {
+						"browsers": [
+							"last 1 Chrome version",
+							"last 1 Firefox version",
+							"last 1 Safari version"
+						]
+					}
+				}
+			]
+		]
+	},
+	"browserslist": [
+		"last 1 Chrome version",
+		"last 1 Firefox version",
+		"last 1 Safari version"
+	],
+	"devDependencies": {
+		"@babel/core": "latest",
+		"babel-preset-minify": "latest",
+		"babel-preset-env": "latest",
+		"browser-sync": "latest",
+		"del": "latest",
+		"gulp": "next",
+		"gulp-autoprefixer": "latest",
+		"gulp-imagemin": "latest",
+		"gulp-babel": "latest",
+		"gulp-cli": "latest",
+		"gulp-concat": "latest",
+		"gulp-sass": "latest",
+		"gulp-watch": "latest"
+	}
+}
