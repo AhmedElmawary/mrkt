@@ -1954,6 +1954,11 @@ function save_order($data)
 	if (isset($data['house_number'])) $house_number = "'" . $data['house_number'] . "'";
 	if (isset($data['latitude'])) $latitude = "'" . $data['latitude'] . "'";
 	if (isset($data['longitude'])) $longitude = "'" . $data['longitude'] . "'";
+	
+	// ask merasall how he sends it me 
+	if (! is_array($data[0])) {
+		unset($data[0]);
+	}
 
 	$products = $data['products'];
 	$client_ip = $_SERVER['REMOTE_ADDR'];
