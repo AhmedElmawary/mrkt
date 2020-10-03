@@ -1955,6 +1955,7 @@ function save_order($data)
 	if (isset($data['latitude'])) $latitude = "'" . $data['latitude'] . "'";
 	if (isset($data['longitude'])) $longitude = "'" . $data['longitude'] . "'";
 	
+	
 	// ask merasall how he sends it me 
 	if (! is_array($data[0])) {
 		unset($data[0]);
