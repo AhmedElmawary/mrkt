@@ -3275,35 +3275,10 @@ function list_sodic_orders($get = [], $vars = [])
 				$search_date .= ' 00:00:00';
 				$max_date .= ' 23:59:59';
 				$date_of_filter= $search_start_month. '-'. $start_day ." 00:00:00";
-				// $$date_of_filter = date('Y-m-01 00:00:00');
 
 				if(! empty ($vars['project'])) $project = $vars['project']; else $project= '%'; 	
 				if(! empty ($vars['order_state_id'])) $order_state_id = $vars['order_state_id']; else $order_state_id= '%'; 	
 		
-				// $query =
-				// "SELECT user_id, orders.id AS order_id,delivery_staff_id,total_price,delivery_time,payment_method,is_paid,orders.created_at AS order_timestamp,
-				// order_states.name AS order_state_name,color,projects.name as project_name,
-				// city.name AS city_name,area.name AS area_name,area.id AS area_id 
-				// FROM orders,user,order_states,states_per_order,city,area, projects,orders_projects op
-				// WHERE city_id=city.id 
-				// AND order_states.id=order_state_id 
-				// AND op.project_id = projects.id 
-				// AND projects.area_id = area.id
-				// AND op.order_id = orders.id 
-				// AND order_states.id LIKE '" . $order_state_id . "' 
-				// AND orders.id=states_per_order.order_id 
-				// AND user.id=user_id 
-				// AND orders.created_at BETWEEN  '" . $date_of_filter . "' 
-				// AND '" . $max_date . "' 
-				// AND orders.area_id =area.id 
-				// AND area.id LIKE '" . $area_id . "' 
-				// AND op.project_id LIKE '${project}'
-				// AND states_per_order.created_at=(SELECT MAX(created_at) 
-				// FROM states_per_order 
-				// WHERE states_per_order.order_id=orders.id) 
-				// ORDER BY orders.created_at DESC";
-
-
 			$query= "SELECT user_id,
 					orders.id AS order_id,
 					delivery_staff_id,
